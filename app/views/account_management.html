@@ -1,0 +1,125 @@
+<!-- <style>
+    #properties{
+        overflow-x:scroll;
+        overflow-y:hidden;
+        white-space:nowrap;
+    }
+    #property-row > .row [class*="col-md"] {
+        float:none;
+        display:inline-block;
+    }
+    .horizontal-separator{
+        border-bottom: 1px solid #dddddd;
+    }
+</style>-->
+<!-- <script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_minimal-red',
+    radioClass: 'iradio_minimal-red',
+    increaseArea: '20%' // optional
+  });
+});
+</script> -->
+<!-- TODO @manohar. Need to figure out why icheck plugin is not working.-->
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="well">
+			<div class="page-header">
+				List of users
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<h4><input type="checkbox"><label>Select All</label></h4>
+				</div>
+				<div class="col-md-1" style="float: right">
+					<button class="btn btn-block btn-primary">Add</button>
+				</div>
+				<div class="col-md-1" style="float: right">
+					<button class="btn btn-block btn-primary">Edit</button>
+				</div>
+				<div class="col-md-1" style="float: right">
+					<button class="btn btn-block btn-danger">Delete</button>
+				</div>	
+				
+			</div>
+			<div class="table-responsive">
+				<table class="table" style="overflow-x:scroll;">
+					<thead>
+						<tr>
+							<th></th>
+							<th>ID</th>
+							<th>First name</th>
+							<th>Last name</th>
+							<th>Email</th>
+							<th>User name</th>
+							<th>Password</th>
+							<th>Registration key</th>
+							<th>Registration password key</th>
+							<th>Registration identifier</th>
+							<th>Phone number</th>
+							<th>Code</th>
+							<th>Is notification enabled</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]" contextmenu="mymenu">
+							<td><input type="checkbox" class="minimal"></td>
+							<td>{{i}}</td>
+							<td>Manohar{{i}}</td>
+							<td>Ramarao{{i}}</td>
+							<td>manohar{{i}}@gmail.com</td>
+							<td>manoharramarao{{i}}</td>
+							<td>test1234</td>
+							<td>bf745f6b-cd8d-4a28-8ae0-040501dff62f</td>
+							<td>bf745f6b-cd8d-4a28-8ae0-040501dff62f</td>
+							<td>bf745f6b-cd8d-4a28-8ae0-040501dff62f</td>
+							<td>990099500{{i}}</td>
+							<td>bf745f6b-cd8d-4a28-8ae0-040501dff62f</td>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="well" id="properties">
+	<div class="page-header">
+		List of users
+	</div>
+	<div id="property-row">
+		<div class="row">
+			<div class="col-md-2"><h4>ID</h4></div>
+			<div class="col-md-2"><h4>First name</h4></div>
+			<div class="col-md-2"><h4>Last name</h4></div>
+			<div class="col-md-2"><h4>Email</h4></div>
+			<div class="col-md-2"><h4>User name</h4></div>
+			<div class="col-md-2"><h4>Password</h4></div>
+			<div class="col-md-2"><h4>Registration key</h4></div>
+			<div class="col-md-2"><h4>Registration password key</h4></div>
+			<div class="col-md-2"><h4>Registration identifier</h4></div>
+			<div class="col-md-2"><h4>Phone number</h4></div>
+			<div class="col-md-2"><h4>Code</h4></div>
+			<div class="col-md-2"><h4>Is notification enabled</h4></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">1</div>
+			<div class="col-md-2">Manohar</div>
+			<div class="col-md-2">Ramarao</div>
+			<div class="col-md-2">manoharramarao@gmail.com</div>
+			<div class="col-md-2">manoharramarao</div>
+			<div class="col-md-2">test1234</div>
+			<div class="col-md-2">bf745f6b-cd8d-4a28-8ae0-040501dff62f</div>
+			<div class="col-md-2">bf745f6b-cd8d-4a28-8ae0-040501dff62f</div>
+			<div class="col-md-2">bf745f6b-cd8d-4a28-8ae0-040501dff62f</div>
+			<div class="col-md-2">9900995001</div>
+			<div class="col-md-2">bf745f6b-cd8d-4a28-8ae0-040501dff62f</div>
+			<div class="col-md-2">1</div>
+		</div>
+	</div>
+</div> -->
+
+

@@ -32,6 +32,9 @@ angular
       .when('/dashboard', {
         templateUrl: 'views/dashboard.html',
       })
+      .when('/account_management', {
+        templateUrl: 'views/account_management.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
