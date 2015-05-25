@@ -1,0 +1,72 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+            <form role="form" name="addUserForm" novalidate >
+                <fieldset>
+                    <div class="form-group">
+                        <input name="first_name" class="form-control" type="text" placeholder="First name"
+                               ng-model="newUser.first_name" required ng-maxlength=50 ng-minlength=3>
+                        <div class="form-group has-error">
+                            <label ng-show="addUserForm.first_name.$invalid && !addUserForm.first_name.$pristine"
+                                   class="control-label has-error">First name is required</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input name="last_name" ng-model="newUser.last_name" class="form-control" type="text"
+                               placeholder="Last name" required ng-maxlength="50" ng-minlength="2">
+                        <div class="form-group has-error">
+                            <label ng-show="addUserForm.last_name.$invalid && !addUserForm.last_name.$pristine"
+                                   class="control-label has-error">Last name is required</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input name="user_name" ng-model="newUser.user_name" class="form-control" type="text"
+                               placeholder="User name" required ng-maxlength="50" ng-minlength="6">
+                        <div class="form-group has-error">
+                            <label ng-show="addUserForm.user_name.$invalid && !addUserForm.user_name.$pristine"
+                                   class="control-label has-error">user name is required</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input name="email" ng-model="newUser.email" class="form-control" type="email"
+                               placeholder="Email" required>
+                        <div class="form-group has-error">
+                            <label ng-show="addUserForm.email.$invalid && !addUserForm.email.$pristine"
+                                   class="control-label has-error">Email is required</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input name="phone_number" ng-model="newUser.phone_number" class="form-control" type="text"
+                               ng-pattern="/^[0-9]+$/" placeholder="Phone number">
+                        <div class="form-group has-error">
+                            <label ng-show="addUserForm.phone_number.$invalid && !addUserForm.phone_number.$pristine"
+                                   class="control-label has-error">Phone number is required</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input name="password" ng-model="newUser.password" class="form-control" type="password"
+                               placeholder="Password" required ng-minlength="4" ng-maxlength="50">
+                        <div class="form-group has-error">
+                            <label ng-show="addUserForm.password.$invalid && !addUserForm.password.$pristine"
+                                   class="control-label has-error">Password is required</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input name="reEnteredPassword" ng-model="newUser.reEnteredPassword" class="form-control"
+                               type="password" placeholder="Re-enter password" required ng-minlength="4" ng-maxlength="50">
+                        <div class="form-group has-error">
+                            <label ng-show="(addUserForm.reEnteredPassword.$invalid && !addUserForm.reEnteredPassword.$pristine)
+                            || (newUser.password != newUser.reEnteredPassword)"
+                                   class="control-label has-error">Passwords should match</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal"
+                            ng-disabled="addUserForm.$invalid || isUnchanged(newUser)" ng-click="addUser(newUser)">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

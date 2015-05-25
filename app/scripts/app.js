@@ -33,7 +33,11 @@ angular
         templateUrl: 'views/dashboard.html',
       })
       .when('/account_management', {
-        templateUrl: 'views/account_management.html'
+        templateUrl: 'views/account_management.html',
+        controller:'AccountManagementCtrl'
+      })
+      .when('/add_user', {
+        templateUrl: 'templates/add_user.html',
       })
       .otherwise({
         redirectTo: '/'
