@@ -1,0 +1,51 @@
+[
+  {
+    "code": "online",
+    "name": "online",
+    "display_name": "Online",
+    "store_name": "store name online",
+    "thumbnail_img": "images/catalog_icon.png"
+  },
+  {
+    "code": "staged",
+    "name": "staged",
+    "display_name": "Staged",
+    "store_name": "store name staged",
+    "thumbnail_img": "images/catalog_icon.png"
+  },
+  {
+    "code": "store1",
+    "name": "store1",
+    "display_name": "Store1",
+    "store_name": "store name store1",
+    "thumbnail_img": "images/catalog_icon.png"
+  },
+  {
+    "code": "store2",
+    "name": "store2",
+    "display_name": "Store2",
+    "store_name": "store name store2",
+    "thumbnail_img": "images/catalog_icon.png"
+  },
+  {
+    "code": "store3",
+    "name": "store3",
+    "display_name": "Store3",
+    "store_name": "store name store3",
+    "thumbnail_img": "images/catalog_icon.png"
+  },
+  {
+    "code": "store4",
+    "name": "store4",
+    "display_name": "Store4",
+    "store_name": "store name store4",
+    "thumbnail_img": "images/catalog_icon.png"
+  },
+  {
+    "code": "store5",
+    "name": "store5",
+    "display_name": "Store5",
+    "store_name": "store name store5",
+    "thumbnail_img": "images/catalog_icon.png"
+  }
+]

@@ -1,0 +1,25 @@
+<div class="section">
+    <div class="page-header">
+        <div class="col-md-12">
+            List of catalogs in the system
+            <div class="empty-line"></div>
+            <div class="col-md-12 horizontal-divider"></div>
+            <div class="empty-line"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div ng-repeat="catalog in catalogs" class="col-md-3">
+                <div class="well">
+                    <div class="row" style="text-align:center">
+                        <img ng-click="onClick(catalog)" style="max-height:200px; max-width:200px" src="images/catalog_icon.png" class="responsive-image" alt="catalog">
+                    </div>
+                    <div class="row" style="text-align:center" ng-click="onClick(catalog)">
+                        <h3>{{catalog.display_name}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

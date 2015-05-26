@@ -1,0 +1,39 @@
+<div class="section">
+    <div class="page-header">
+        <div class="col-md-12">
+            List of categories
+            <div class="col-md-2" style="float: right">
+                <button class="btn btn-block btn-primary">Add new category</button>
+            </div>
+            <!--<div class="col-md-1" style="float: right">
+                <button class="btn btn-block btn-primary">Edit</button>
+            </div>
+            <div class="col-md-1" style="float: right">
+                <button class="btn btn-block btn-danger">Delete</button>
+            </div>-->
+        </div>
+        <div class="col-md-12">
+            <div class="empty-line"></div>
+            <div class="horizontal-divider"></div>
+            <div class="empty-line"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div ng-repeat="category in categories" class="col-md-3">
+                <div class="well" ng-mouseover="showButtons='true'" ng-mouseleave="showButtons=''">
+                    <div class="row" style="text-align:center">
+                        <img ng-click="onClick(catalog)" style="min-height:200px; max-height:200px; max-width:200px" ng-src="{{category.thumbnail_img}}" class="responsive-image" alt="catalog">
+                    </div>
+                    <div class="row" style="text-align:center" ng-click="onClick(catalog)" ng-mouseover="showButtons='true'">
+                        <h3>{{category.display_name}}</h3>
+                    </div>
+                    <div class="row" style="text-align:center" ng-show="showButtons">
+                        <button class="btn btn-danger">Delete</button>
+                        <button class="btn btn-primary">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

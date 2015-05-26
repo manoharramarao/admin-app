@@ -32,12 +32,20 @@ angular
       .when('/dashboard', {
         templateUrl: 'views/dashboard.html',
       })
-      .when('/account_management', {
+      .when('/account', {
         templateUrl: 'views/account_management.html',
-        controller:'AccountManagementCtrl'
+        controller:'AccountCtrl'
       })
-      .when('/add_user', {
-        templateUrl: 'templates/add_user.html',
+      .when('/catalog', {
+        templateUrl: 'views/catalog_management.html',
+        controller: 'CatalogCtrl'
+      })
+      .when('/:catalog_code/category', {
+        templateUrl: 'views/category_management.html',
+        controller:'CategoryCtrl'
+      })
+      .when('/product', {
+        templateUrl: 'views/product_management.html',
       })
       .otherwise({
         redirectTo: '/'

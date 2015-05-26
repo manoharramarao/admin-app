@@ -8,7 +8,7 @@
  * Controller of the betastoreAdminApp
  */
 angular.module('betastoreAdminApp')
-  .controller('AccountManagementCtrl', function ($rootScope, $timeout, $scope, userService) {
+  .controller('AccountCtrl', function ($rootScope, $timeout, $scope, userService) {
 
     $scope.users = [];
     $scope.usersToEdit = [];

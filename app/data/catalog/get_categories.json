@@ -1,0 +1,44 @@
+[
+  {
+    "code": "fruits",
+    "name": "fruits",
+    "display_name": "Fruits",
+    "catalogs": ["online", "staged"],
+    "thumbnail_img": "images/category/fruits.png"
+  },
+  {
+    "code": "vegetables",
+    "name": "vegetables",
+    "display_name": "Vegetables",
+    "catalogs": ["online", "staged"],
+    "thumbnail_img": "images/category/vegetables.png"
+  },
+  {
+    "code": "toys",
+    "name": "toys",
+    "display_name": "Toys",
+    "catalogs": ["online", "staged"],
+    "thumbnail_img": "images/category/toys.png"
+  },
+  {
+    "code": "baby",
+    "name": "baby",
+    "display_name": "Baby",
+    "catalogs": ["online", "staged"],
+    "thumbnail_img": "images/category/baby.png"
+  },
+  {
+    "code": "apparel",
+    "name": "apparel",
+    "display_name": "Apparel",
+    "catalogs": ["online", "staged"],
+    "thumbnail_img": "images/category/apparel.png"
+  },
+  {
+    "code": "electronics",
+    "name": "electronics",
+    "display_name": "Electronics",
+    "catalogs": ["online", "staged"],
+    "thumbnail_img": "images/category/electronics.png"
+  }
+]
