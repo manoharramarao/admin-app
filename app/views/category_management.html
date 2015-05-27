@@ -1,39 +1,69 @@
 <div class="section">
     <div class="page-header">
-        <div class="col-md-12">
-            List of categories
-            <div class="col-md-2" style="float: right">
-                <button class="btn btn-block btn-primary">Add new category</button>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                    List of categories
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12" style="float: right">
+                    <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#addCategory">Add new category</button>
+                </div>
             </div>
-            <!--<div class="col-md-1" style="float: right">
-                <button class="btn btn-block btn-primary">Edit</button>
-            </div>
-            <div class="col-md-1" style="float: right">
-                <button class="btn btn-block btn-danger">Delete</button>
-            </div>-->
         </div>
-        <div class="col-md-12">
+        <!--<div class="col-md-12">
             <div class="empty-line"></div>
             <div class="horizontal-divider"></div>
             <div class="empty-line"></div>
-        </div>
+        </div>-->
     </div>
     <div class="row">
         <div class="col-md-12">
             <div ng-repeat="category in categories" class="col-md-3">
-                <div class="well" ng-mouseover="showButtons='true'" ng-mouseleave="showButtons=''">
+                <div class="well">
                     <div class="row" style="text-align:center">
-                        <img ng-click="onClick(catalog)" style="min-height:200px; max-height:200px; max-width:200px" ng-src="{{category.thumbnail_img}}" class="responsive-image" alt="catalog">
+                        <button class="btn btn-danger" ng-click="onDelete(category)">Delete</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#editCategory" ng-click="onEdit(category)">Edit</button>
+                    </div>
+                    <div class="row empty-line"></div>
+                    <div class="row" style="text-align:center">
+                        <img ng-click="onClick(catalog)" style="min-height:200px; max-height:200px; max-width:200px"
+                             ng-src="{{category.thumbnail_img}}" class="responsive-image" alt="catalog">
                     </div>
                     <div class="row" style="text-align:center" ng-click="onClick(catalog)" ng-mouseover="showButtons='true'">
                         <h3>{{category.display_name}}</h3>
-                    </div>
-                    <div class="row" style="text-align:center" ng-show="showButtons">
-                        <button class="btn btn-danger">Delete</button>
-                        <button class="btn btn-primary">Edit</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Modal to add category -->
+<div class="modal fade bs-example-modal-lg" id="addCategory">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        		<h4 class="modal-title">Enter category details</h4>
+      		</div>
+			<div class="modal-body">
+				<div ng-include src="'templates/add_category.html'"></div>
+			</div>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal to edit user -->
+<div class="modal fade bs-example-modal-lg" id="editCategory">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        		<h4 class="modal-title">Edit category details</h4>
+      		</div>
+			<div class="modal-body">
+				<div ng-include src="'templates/edit_category.html'"></div>
+			</div>
+    	</div>
+  	</div>
 </div>

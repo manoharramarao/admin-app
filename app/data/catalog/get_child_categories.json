@@ -1,0 +1,44 @@
+[
+  {
+    "code": "media",
+    "name": "Media",
+    "display_name": "Media",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "cameras",
+    "name": "Cameras",
+    "display_name": "Cameras",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "computers",
+    "name": "Computers",
+    "display_name": "Computers",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "mobiles",
+    "name": "Mobiles",
+    "display_name": "Mobiles",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "accessories",
+    "name": "Accessories",
+    "display_name": "Accessories",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "chargers",
+    "name": "Chargers",
+    "display_name": "Chargers",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  }
+]

@@ -4,15 +4,23 @@
             List of categories under Electronics
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <ul>
-                    <li><a href="">Media</a></li>
-                    <li><a href="">Cameras</a></li>
-                    <li><a href="">Computers</a></li>
-                    <li><a href="">Mobiles</a></li>
-                    <li><a href="">Accessories</a></li>
-                    <li><a href="">Chargers</a></li>
-                </ul>
+            <div class="col-md-12">
+                <div ng-repeat="childCategory in childCategories" class="col-md-3">
+                    <div class="well">
+                        <div class="row" style="text-align:center">
+                            <button class="btn btn-danger" ng-click="onDelete(childCategory)">Delete</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#editchildCategory" ng-click="onEdit(childCategory)">Edit</button>
+                        </div>
+                        <div class="row empty-line"></div>
+                        <div class="row" style="text-align:center">
+                            <img ng-click="onClick(childCategory)" style="min-height:200px; max-height:200px; max-width:200px"
+                                 ng-src="{{childCategory.thumbnail_img}}" class="responsive-image" alt="childCategory">
+                        </div>
+                        <div class="row" style="text-align:center" ng-click="onClick(childCategory)" ng-mouseover="showButtons='true'">
+                            <h3>{{childCategory.display_name}}</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -20,17 +28,26 @@
 <div class="section">
     <div class="well">
         <div class="page-header">
-            List of Products under Electronics
+            List of products under Electronics
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <ul>
-                    <li><a href="">Apple TV</a></li>
-                    <li><a href="">Apple iPad</a></li>
-                    <li><a href="">Chrome cast</a></li>
-                    <li><a href="">Logitech mouse</a></li>
-                    <li><a href="">Toshiba Chromebook</a></li>
-                </ul>
+                <div ng-repeat="product in products" class="col-md-3">
+                    <div class="well">
+                        <div class="row" style="text-align:center">
+                            <button class="btn btn-danger" ng-click="onDelete(product)">Delete</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#editProduct" ng-click="onEdit(product)">Edit</button>
+                        </div>
+                        <div class="row empty-line"></div>
+                        <div class="row" style="text-align:center">
+                            <img ng-click="onClick(product)" style="min-height:200px; max-height:200px; max-width:200px"
+                                 ng-src="{{product.thumbnail_img}}" class="responsive-image" alt="product">
+                        </div>
+                        <div class="row" style="text-align:center" ng-click="onClick(product)" ng-mouseover="showButtons='true'">
+                            <h3>{{product.display_name}}</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

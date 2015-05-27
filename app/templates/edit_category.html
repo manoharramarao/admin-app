@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+            <form role="form" name="editCategoryForm" novalidate >
+                <fieldset>
+                    <div class="form-group">
+                        <input name="name" class="form-control" type="text" placeholder="Name"
+                               ng-model="editCategory.name" required ng-maxlength=50 ng-minlength=3>
+                        <div class="form-group has-error">
+                            <label ng-show="editCategoryForm.name.$invalid && !editCategoryForm.name.$pristine"
+                                   class="control-label has-error">Name is required</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input name="display_name" ng-model="editCategory.display_name" class="form-control" type="text"
+                               placeholder="Display name" required ng-maxlength="50" ng-minlength="2">
+                        <div class="form-group has-error">
+                            <label ng-show="editCategoryForm.display_name.$invalid && !editCategoryForm.display_name.$pristine"
+                                   class="control-label has-error">Display name is required</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Catalogs</label>
+                        <select multiple class="form-control" ng-model="editCategory.catalogs">
+                            <option>Online</option>
+                            <option>Staged</option>
+                            <option>Store1</option>
+                            <option>Store2</option>
+                            <option>Store3</option>
+                            <option>Store4</option>
+                            <option>Store5</option>
+                        </select>
+                    </div>
+                    <div class="alert" flow-init flow-drop flow-drag-enter="style={border:'4px solid green'}"
+                         flow-drag-leave="style={}" ng-style="style">
+                        <div class="empty-line"></div>
+                            Drag And Drop image
+                        <div class="empty-line"></div>
+                    </div>
+                    <!--<div>
+                        <img flow-img="$flow.files[0]" />
+                    </div>-->
+                </fieldset>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal"
+                            ng-disabled="editCategoryForm.$invalid || isUnchanged(editCategory)" ng-click="editCategory(editCategory)">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

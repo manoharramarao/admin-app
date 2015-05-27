@@ -17,7 +17,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'flow'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -46,6 +47,7 @@ angular
       })
       .when('/product', {
         templateUrl: 'views/product_management.html',
+        controller:'ProductCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -12,7 +12,7 @@
     <link href="styles/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
     <link href="styles/admin_app.css" rel="stylesheet" type="text/css" />
   </head>
-  <body class="skin-blue sidebar-mini" ng-app="betastoreAdminApp">
+  <body class="skin-blue sidebar-mini flow-prevent-drop" ng-app="betastoreAdminApp">
     <div class="wrapper" ng-controller="GlobalCtrl">
 
       <div class="app-alert col-lg-4 col-xs-12 col-md-8 col-md-offset-2 col-lg-offset-4" id="app-alert"
@@ -359,6 +359,8 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/flow.js/dist/flow.js"></script>
+    <script src="bower_components/ng-flow/dist/ng-flow.js"></script>
     <!-- endbower -->
     <script src="scripts/admin.min.js" type="text/javascript"></script>
     <script src="scripts/app.js"></script>
@@ -366,6 +368,7 @@
     <script src="scripts/services/userservice.js"></script>
     <script src="scripts/services/catalogservice.js"></script>
     <script src="scripts/services/categoryservice.js"></script>
+    <script src="scripts/services/productservice.js"></script>
 
     <script src="scripts/controllers/global.js"></script>
     <script src="scripts/controllers/main.js"></script>
@@ -373,8 +376,7 @@
     <script src="scripts/controllers/account.js"></script>
     <script src="scripts/controllers/catalog.js"></script>
     <script src="scripts/controllers/category.js"></script>
-
-
+    <script src="scripts/controllers/product.js"></script>
 
   </body>
 </html>

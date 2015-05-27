@@ -1,0 +1,37 @@
+[
+  {
+    "code": "apple_tv",
+    "name": "Apple TV",
+    "display_name": "Apple TV",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "apple_ipad",
+    "name": "Apple iPad",
+    "display_name": "Apple iPad",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "chromecast",
+    "name": "Chromecast",
+    "display_name": "Chromecast",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "logitech_mouse",
+    "name": "Logitech Mouse",
+    "display_name": "Logitech Mouse",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  },
+  {
+    "code": "toshiba_chromebook",
+    "name": "Toshiba Chromebook",
+    "display_name": "Toshiba Chromebook",
+    "categories": ["Electronics"],
+    "thumbnail_img": "images/category/electronics.png"
+  }
+]

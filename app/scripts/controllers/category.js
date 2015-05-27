@@ -19,6 +19,25 @@ angular.module('betastoreAdminApp')
         console.log("error occurred - " + JSON.stringify(error));
     });
 
+    $scope.onDelete = function(category){
+        for(var i=0; i<$scope.categories.length; i++){
+            if($scope.categories[i].code == category.code){
+                $scope.categories.splice(i, 1);
+            }
+        }
+    }
 
+    $scope.onEdit = function(category){
+        $scope.editCategory = category;
+    }
+
+    $scope.editCategory = function(category){
+        for(var i=0; i<$scope.categories.length; i++){
+            if($scope.categories[i].code === category.code){
+                $scope.categories[i].name = category.name;
+                $scope.categories[i].display_name = category.display_name;
+            }
+        }
+    }
 
   });
